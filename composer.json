@@ -1,0 +1,14 @@
+{
+  "name": "fforsthuber/sf-mailer-setup",
+  "type": "project",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "symfony/mailer": "6.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}

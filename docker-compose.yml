@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  phpcli:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    user: 1000:1000
+    volumes:
+      - ./:/tmp
+    networks:
+      - default
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "8261:8025"
+    networks:
+      - default
